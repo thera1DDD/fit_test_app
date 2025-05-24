@@ -14,7 +14,7 @@
             <select name="category_id" required>
                 @foreach($categories as $category)
                     <option value="{{ $category->id }}"
-                        {{ $category->id == $product->getCategoryId() ? 'selected' : '' }}>
+                        {{ $category->id == $product->id ? 'selected' : '' }}>
                         {{ $category->name }}
                     </option>
                 @endforeach

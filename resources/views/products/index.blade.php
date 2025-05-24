@@ -3,6 +3,7 @@
 @section('content')
     <h1>Products</h1>
     <a href="{{ route('products.create') }}" class="btn btn-primary mb-3">Create New</a>
+    <a href="{{ route('orders.index') }}" class="btn btn-primary mb-3">Orders</a>
 
     <table class="table table-striped">
         <thead>

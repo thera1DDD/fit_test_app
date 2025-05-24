@@ -31,4 +31,9 @@ class ProductDTO
             $product->updated_at
         );
     }
+
+    public function getCategoryId(): int
+    {
+        return $this->category_id;
+    }
 }

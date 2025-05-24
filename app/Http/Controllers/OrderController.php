@@ -19,6 +19,12 @@ class OrderController extends Controller
         return view('orders.create', compact('products'));
     }
 
+    public function show($id)
+    {
+        $order = Order::with(['product'])->findOrFail($id);
+        return view('orders.show', compact('order'));
+    }
+
     public function index()
     {
         $orders = Order::with('product')->paginate(15);
